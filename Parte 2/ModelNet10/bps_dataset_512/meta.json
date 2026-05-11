@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "n_bps_points": 512,
+  "bps_radius": 1.1,
+  "num_points": 1000,
+  "classes": [
+    "desk",
+    "door",
+    "dresser",
+    "flower_pot",
+    "glass_box",
+    "keyboard",
+    "lamp",
+    "laptop",
+    "mantel",
+    "monitor"
+  ],
+  "n_train": 1996,
+  "n_test": 572,
+  "n_workers": 28
+}
