@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "n_bps_points": 512,
+  "bps_radius": 1.1,
+  "num_points": 1000,
+  "classes": [
+    "airplane",
+    "bathtub",
+    "table"
+  ],
+  "n_train": 1124,
+  "n_test": 250,
+  "n_workers": 10
+}
