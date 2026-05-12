@@ -18,7 +18,7 @@ El proyecto se divide en dos partes diferenciadas:
 | Parte | Datos | Objetivo |
 |-------|-------|----------|
 | **Parte 1** | Datos 2D (imágenes) | β-VAE base + Cyclical Annealing |
-| **Parte 2** | Datos 3D (nubes de puntos — ModelNet40) | Extensión a geometría 3D |
+| **Parte 2** | Datos 3D (nubes de puntos — ModelNet40) | Extensión a nubes de puntos 3D |
 
 ---
 
@@ -29,16 +29,21 @@ RNAP-Ciclycal-BetaVAE/
 │
 ├── 📁 Parte 1/                  # β-VAE sobre datos 2D
 │   └── (notebooks .ipynb)
+│   └── MNIST 2D / 3D
+│   └── CELEBA
+│   └── FOOD101
 │
 ├── 📁 Parte 2/                  # β-VAE sobre datos 3D
 │   ├── (notebooks .ipynb)
-│   └── ⚠️ modelnet40/           # ← DATASET NO INCLUIDO (descarga manual)
+│   └── modelnet40/
+│   └── modelnet25/
+│   └── modelnet10/
+│   └── modelnet3/         
 │
 ├── 📄 README.md
 └── 📄 requeriments.txt          # Dependencias del proyecto
 ```
 
-> ⚠️ **Nota importante:** El dataset **ModelNet40** no está incluido en el repositorio por su tamaño. Descárgalo manualmente y colócalo en `Parte 2/modelnet40/` antes de ejecutar los notebooks de la Parte 2.  
 > 📦 Archivos completos (modelos, datos, resultados): [Google Drive](https://drive.google.com/drive/folders/1bTddEzXlOAoWenZbNqHRLk48cvdGTZLD?usp=sharing)
 
 ---
@@ -77,19 +82,6 @@ cd RNAP-Ciclycal-BetaVAE
 ```bash
 pip install -r requeriments.txt
 ```
-
-### 3. (Solo Parte 2) Descargar ModelNet40
-Descarga el dataset y colócalo en:
-```
-Parte 2/modelnet40/
-```
-
-### 4. Ejecutar los notebooks
-```bash
-jupyter notebook
-```
-Abre los notebooks de `Parte 1/` o `Parte 2/` según corresponda.
-
 ---
 
 ## 📦 Dependencias Principales
@@ -131,4 +123,4 @@ Proyecto desarrollado por estudiantes de **3º de Ingeniería en IA** de la **Un
 
 ---
 
-*Universidad de Alicante · Grado en Ingeniería en Inteligencia Artificial · Curso 2024-25*
+*Universidad de Alicante · Grado en Ingeniería en Inteligencia Artificial · Curso 2025-26*
